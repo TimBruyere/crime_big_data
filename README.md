@@ -16,6 +16,6 @@ Avantage de la visualisation Graphe :
 
 La visualisation graphe permet de transformer un large panel de données, en noeuds et relation permettant de visualiser les corrélations de données plus efficacement
 qu'une base de donnée relationnelle pourrait le faire. 
-Pouvoir zoomer et comprendre les liens entre différentes données simplifie les decisions à prendre ainsi que la compréhension pour les personnes non-expertes.
+Pouvoir zoomer et comprendre les liens entre différentes données simplifient les decisions à prendre ainsi que la compréhension pour les personnes non-expertes.
 En outre, la visualisation graphe respecte plus le principe de modelisation naturelle en permettant d'incarner le réseau des crimes recensés par la police et gendarmerie nationale en france
 que nous avons pu étudier lors de ce TP.
