@@ -1,0 +1,63 @@
+
+LOAD CSV WITH HEADERS FROM 'file:///crimes_GN_2012_flat.csv' AS row
+MERGE (d:Departement {numero: row.departement_numero})
+MERGE (s:Poste {nom: row.poste})
+MERGE (c:Crime {code: row.code_index, description: row.libelle_index})
+MERGE (d)-[:HAS_POSTE]->(s)
+MERGE (s)-[:REPORTED_CRIME {faits: toInteger(row.faits), annee: toInteger(row.annee)}]->(c);
+
+LOAD CSV WITH HEADERS FROM 'file:///crimes_GN_2013_flat.csv' AS row
+MERGE (d:Departement {numero: row.departement_numero})
+MERGE (s:Poste {nom: row.poste})
+MERGE (c:Crime {code: row.code_index, description: row.libelle_index})
+MERGE (d)-[:HAS_POSTE]->(s)
+MERGE (s)-[:REPORTED_CRIME {faits: toInteger(row.faits), annee: toInteger(row.annee)}]->(c);
+
+LOAD CSV WITH HEADERS FROM 'file:///crimes_GN_2014_flat.csv' AS row
+MERGE (d:Departement {numero: row.departement_numero})
+MERGE (s:Poste {nom: row.poste})
+MERGE (c:Crime {code: row.code_index, description: row.libelle_index})
+MERGE (d)-[:HAS_POSTE]->(s)
+MERGE (s)-[:REPORTED_CRIME {faits: toInteger(row.faits), annee: toInteger(row.annee)}]->(c);
+
+LOAD CSV WITH HEADERS FROM 'file:///crimes_GN_2015_flat.csv' AS row
+MERGE (d:Departement {numero: row.departement_numero})
+MERGE (s:Poste {nom: row.poste})
+MERGE (c:Crime {code: row.code_index, description: row.libelle_index})
+MERGE (d)-[:HAS_POSTE]->(s)
+MERGE (s)-[:REPORTED_CRIME {faits: toInteger(row.faits), annee: toInteger(row.annee)}]->(c);
+
+LOAD CSV WITH HEADERS FROM 'file:///crimes_GN_2016_flat.csv' AS row
+MERGE (d:Departement {numero: row.departement_numero})
+MERGE (s:Poste {nom: row.poste})
+MERGE (c:Crime {code: row.code_index, description: row.libelle_index})
+MERGE (d)-[:HAS_POSTE]->(s)
+MERGE (s)-[:REPORTED_CRIME {faits: toInteger(row.faits), annee: toInteger(row.annee)}]->(c);
+
+LOAD CSV WITH HEADERS FROM 'file:///crimes_GN_2017_flat.csv' AS row
+MERGE (d:Departement {numero: row.departement_numero})
+MERGE (s:Poste {nom: row.poste})
+MERGE (c:Crime {code: row.code_index, description: row.libelle_index})
+MERGE (d)-[:HAS_POSTE]->(s)
+MERGE (s)-[:REPORTED_CRIME {faits: toInteger(row.faits), annee: toInteger(row.annee)}]->(c);
+
+LOAD CSV WITH HEADERS FROM 'file:///crimes_GN_2018_flat.csv' AS row
+MERGE (d:Departement {numero: row.departement_numero})
+MERGE (s:Poste {nom: row.poste})
+MERGE (c:Crime {code: row.code_index, description: row.libelle_index})
+MERGE (d)-[:HAS_POSTE]->(s)
+MERGE (s)-[:REPORTED_CRIME {faits: toInteger(row.faits), annee: toInteger(row.annee)}]->(c);
+
+LOAD CSV WITH HEADERS FROM 'file:///crimes_GN_2019_flat.csv' AS row
+MERGE (d:Departement {numero: row.departement_numero})
+MERGE (s:Poste {nom: row.poste})
+MERGE (c:Crime {code: row.code_index, description: row.libelle_index})
+MERGE (d)-[:HAS_POSTE]->(s)
+MERGE (s)-[:REPORTED_CRIME {faits: toInteger(row.faits), annee: toInteger(row.annee)}]->(c);
+
+LOAD CSV WITH HEADERS FROM 'file:///crimes_GN_2020_flat.csv' AS row
+MERGE (d:Departement {numero: row.departement_numero})
+MERGE (s:Poste {nom: row.poste})
+MERGE (c:Crime {code: row.code_index, description: row.libelle_index})
+MERGE (d)-[:HAS_POSTE]->(s)
+MERGE (s)-[:REPORTED_CRIME {faits: toInteger(row.faits), annee: toInteger(row.annee)}]->(c);
